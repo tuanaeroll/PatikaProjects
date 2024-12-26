@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-// Kullanıcıya hoşgeldin de ve lokasyon sor.
+﻿// Kullanıcıya hoşgeldin de ve lokasyon sor.
 do
 {
     Console.WriteLine("Tatil Uygulamasına hoşgeldiniz! Lütfen nereye gitmek istediğinizi seçiniz: -Bodrum, - Marmaris, - Çeşme");
@@ -56,7 +55,6 @@ do
         }
         break;
     }
-
     // Toplam tutarı ekrana yazdır.
     Console.WriteLine($"Bu muhteşem tatil için harcayacağınız tutar -> {sum}\nBaşka bir tatil planlamak ister misiniz? (evet/hayır)");
 } while (Console.ReadLine().ToLower() == "evet");
