@@ -26,4 +26,4 @@
         } while (sayac <= limit);
 
         // While önce koşulu kontrol eder, koşul sağlanmıyorsa döngü bir kez bile çalışmaz. Do-While'da ise döngü bir kez çalışır, koşul ardından kontrol edilir. Kullanıcıdan veri alırken en az bir kez döngünün çalışması gereken hallerde Do-While'ı kullanmak gerekir. Örneğin bu pratikte kullanıcı inputu 0 olursa while döngüsü ekrana bir çıktı vermeyecektir ama do-while döngüsü bir tur döngüyü çalıştıracaktır.
-        
+        // Son
