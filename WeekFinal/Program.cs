@@ -1,7 +1,4 @@
 ﻿// 1 - Aşağıdaki çıktıyı yazan bir program.
-
-using System.ComponentModel.DataAnnotations;
-
 Console.WriteLine("Merhaba\r\nNasılsın ?\r\nİyiyim\r\nSen nasılsın?");
 
 // 2 - Bir adet metinsel , bir adet tam sayı verisi tutmak için 2 adet değişken tanımlayınız. Bunların değerlerini atayıp , ekrana yazdırınız.
