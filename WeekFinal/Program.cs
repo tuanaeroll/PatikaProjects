@@ -67,26 +67,18 @@ int Add(int num1, int num2)
 
 // 10 - Kullanıcıdan true ya da false değeri alıp string bir değer dönen bir metot tanımlayınız.
 
-Console.WriteLine("Lütfen true ya da false yazınız:");
-string input = Console.ReadLine();
-
-string result = BooleanToString(input);
-Console.WriteLine(result);
-string BooleanToString(string value)
+string Metot(bool value)
 {
-    if (value == "true")
+    if (value)
     {
-        return "Kullanıcı true değeri girdi.";
-    }
-    else if (value == "false")
-    {
-        return "Kullanıcı false değeri girdi.";
+        return "true";
     }
     else
     {
-        return "Geçersiz bir değer girdiniz.";
+        return "false";
     }
 }
+
 
 // 11 - 3 Kişinin yaşlarını alıp en yaşlı olanının yaş bilgisini dönen bir metot yazınız.
 Console.WriteLine("Lütfen 3 kişinin yaşlarını sırayla giriniz:");
