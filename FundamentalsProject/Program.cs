@@ -10,13 +10,12 @@ while (goOn)
         switch (programNumber)
         {
             case 1:
-                RastgeleSayiBulmaOyunu();
-                break;
+                GuessTheRandomNumberGame();                break;
             case 2:
-                HesapMakinesi();
+                Calculator();
                 break;
             case 3:
-                OrtalamaHesaplama();
+                CalculateAverage();
                 break;
             default:
                 Console.WriteLine("Geçersiz program numarası girdiniz.");
@@ -36,7 +35,7 @@ while (goOn)
         }
 }
 
-void RastgeleSayiBulmaOyunu()
+void GuessTheRandomNumberGame()
 {
     // Give information to user about the game
     Console.WriteLine("Rastgele Sayı Tahmin Oyunu'na hoş geldiniz! Sayıyı tahmin etmeye çalışın, ipuçlarını kullanın, ama unutmayın 5 canınız var.");
@@ -81,7 +80,7 @@ void RastgeleSayiBulmaOyunu()
     }
 }
 
-void HesapMakinesi()
+void Calculator()
 {
     // Give information to user about the calculator
     Console.WriteLine("Hesap makinesine hoşgeldiniz!Hesaplamak istediğiniz sayıları ve işlemi girerek sonucu elde edebilirsiniz.\nİlk sayıyı giriniz:");
@@ -134,7 +133,7 @@ void HesapMakinesi()
     }
 }
 
-void OrtalamaHesaplama()
+void CalculateAverage()
 {
     // Give information to user about the average calculation
     Console.WriteLine("Ortalama Hesaplama'ya hoş geldiniz! Birkaç not girip ortalamanızı hesaplayabilirsiniz.");
