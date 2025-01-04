@@ -81,6 +81,7 @@ string Metot(bool value)
 
 
 // 11 - 3 Kişinin yaşlarını alıp en yaşlı olanının yaş bilgisini dönen bir metot yazınız.
+
 Console.WriteLine("Lütfen 3 kişinin yaşlarını sırayla giriniz:");
 int age1 = Convert.ToInt32(Console.ReadLine());
 int age2 = Convert.ToInt32(Console.ReadLine());
@@ -103,11 +104,11 @@ Console.WriteLine("En büyük sayı: " + max);
     {
         Console.WriteLine("Lütfen bir sayı giriniz, çıkmak istiyorsanız 1001 yazınız:");
         int number = Convert.ToInt32(Console.ReadLine());
+        max = Math.Max(max, number);
         if (number == 1001)
         {
             break;
         }
-        max = Math.Max(max, number);
     }
     return max;
 }
