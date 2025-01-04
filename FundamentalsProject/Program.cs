@@ -10,7 +10,8 @@ while (goOn)
         switch (programNumber)
         {
             case 1:
-                GuessTheRandomNumberGame();                break;
+                GuessTheRandomNumberGame();                
+                break;
             case 2:
                 Calculator();
                 break;
@@ -85,21 +86,15 @@ void Calculator()
     // Give information to user about the calculator
     Console.WriteLine("Hesap makinesine hoşgeldiniz!Hesaplamak istediğiniz sayıları ve işlemi girerek sonucu elde edebilirsiniz.\nİlk sayıyı giriniz:");
     // Get the first number from user
-    int number1 = Convert.ToInt32(Console.ReadLine());
+    double number1 = Convert.ToDouble(Console.ReadLine());
     // Get the second number from user
     Console.WriteLine("İkinci sayıyı giriniz:");
-    int number2 = Convert.ToInt32(Console.ReadLine());
+    double number2 = Convert.ToDouble(Console.ReadLine());
     // Get the operation symbol from user
     Console.WriteLine("İşlem sembolünü girin:\n1) Toplama (+)\n2) Çıkarma (-)\n3) Çarpma (*)\n4) Bölme (/)");
     char operation = Convert.ToChar(Console.ReadLine());
     // Declare a variable to store the result
     double result = 0;
-    // Validate the operation
-    if (operation != '+' && operation != '-' && operation != '*' && operation != '/')
-    {
-        Console.WriteLine("Geçersiz işlem girdiniz.");
-        return;
-    }
     // Check the operation and calculate the result
     switch (operation)
     {
@@ -123,7 +118,7 @@ void Calculator()
             }
             else
             {
-                result = (double)number1 / number2;
+                result = number1 / number2;
                 Console.WriteLine($"Sonuç -> {result}");
             }
             break;
