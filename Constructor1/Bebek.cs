@@ -20,7 +20,6 @@ namespace Constructor1
         {
             Ad = ad;
             Soyad = soyad;
-            Dogum();
         }
 
         // Bebek sınıfının parametresiz yapıcı metodunu yazıyoruz. Ad ve soyadı ekrana yazdıracağımız için bu metodu çağırırken ad ve soyadı bilinmiyor olarak tanımlıyoruz.
@@ -28,7 +27,6 @@ namespace Constructor1
         {
             Ad = "Bilinmiyor";
             Soyad = "Bilinmiyor";
-            Dogum();
         }
 
         // Doğum metodu ile bebeğe doğum tarihini atıyoruz ve bilgilerini ekrana yazdırıyoruz.
