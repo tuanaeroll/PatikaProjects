@@ -1,8 +1,10 @@
 ﻿using PatikaKütüphanesi;
 
+// New: Kitap sınıfından bir nesne oluşturmak için kullanılır. Nesne oluşturulduğunda, constructor (yapıcı metot) otomatik olarak çalışır.
 Kitap kitap1 = new Kitap("1984", "George Orwell", "Can Yayınları", 352);
 Kitap kitap2 = new Kitap("Sineklerin Tanrısı", "William Golding", "İthaki Yayınları", 408);
 
+// Parametresiz constructor kullanılarak oluşturulan nesnelere özellikler sonradan atanır.
 Kitap kitap3 = new Kitap();
 kitap3.Ad = "Hayvan Çiftliği";
 kitap3.YazarAdi = "George Orwell";

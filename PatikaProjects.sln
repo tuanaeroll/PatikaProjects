@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructor1", "Constructor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatikaKütüphanesi", "PatikaKütüphanesi\PatikaKütüphanesi.csproj", "{25CBBB99-4581-48AE-8A9C-DD37D9FFB1F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{022BB2F6-ABA2-4DCF-9E4F-007C4DB7E1EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +91,10 @@ Global
 		{25CBBB99-4581-48AE-8A9C-DD37D9FFB1F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25CBBB99-4581-48AE-8A9C-DD37D9FFB1F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25CBBB99-4581-48AE-8A9C-DD37D9FFB1F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{022BB2F6-ABA2-4DCF-9E4F-007C4DB7E1EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{022BB2F6-ABA2-4DCF-9E4F-007C4DB7E1EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{022BB2F6-ABA2-4DCF-9E4F-007C4DB7E1EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{022BB2F6-ABA2-4DCF-9E4F-007C4DB7E1EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,5 +112,6 @@ Global
 		{0FD3F4B3-431E-43F4-9E7D-2978944EA700} = {B7CB9472-22F9-43DD-BB22-999B1908B3A6}
 		{3E534513-268A-4FC3-B65F-2A32D87CEEAC} = {B7CB9472-22F9-43DD-BB22-999B1908B3A6}
 		{25CBBB99-4581-48AE-8A9C-DD37D9FFB1F9} = {B7CB9472-22F9-43DD-BB22-999B1908B3A6}
+		{022BB2F6-ABA2-4DCF-9E4F-007C4DB7E1EE} = {B7CB9472-22F9-43DD-BB22-999B1908B3A6}
 	EndGlobalSection
 EndGlobal
