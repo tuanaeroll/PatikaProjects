@@ -1,7 +1,7 @@
 ﻿// 10 tamsayı içeren bir Array oluşturuyoruz.
 int[] tamSayilar = new int[10];
 // Dizinin içini dolduruyoruz.
-for ( int i = 1; i < tamSayilar.Length; i++)
+for ( int i = 1; i < tamSayilar.Length + 1; i++)
 {
     tamSayilar[i-1] = i;
 }
@@ -13,29 +13,23 @@ foreach (int sayi in tamSayilar)
 // Kullaıcıdan alınan değeri diziye ekleyecek kodu yazıyoruz.
 Console.WriteLine("Diziye eklemek istediğiniz yeni bir tamsayı değeri giriniz:");
 int yeniSayi = Convert.ToInt32(Console.ReadLine());
-// Arrayler sabit boyutlu olduğu için yeni bir array oluşturup eski arrayi kopyalayıp yeni değeri ekleyeceğiz.
-int[] yeniTamSayilar = new int[tamSayilar.Length + 1];
-// Eski arrayin içeriğini yeni arraye kopyalıyoruz.
-for (int i = 0; i < tamSayilar.Length; i++)
-{
-    yeniTamSayilar[i] = tamSayilar[i];
-}
-// Yeni değeri ekliyoruz.
-yeniTamSayilar[tamSayilar.Length] = yeniSayi;
+// Array.Resize ile diziyi genişletiyoruz
+Array.Resize(ref tamSayilar, tamSayilar.Length + 1);
+tamSayilar[tamSayilar.Length - 1] = yeniSayi;
 // foreach ile yeni diziyi yazdırıyoruz.
-foreach (int sayi in yeniTamSayilar)
+foreach (int sayi in tamSayilar)
 {
     Console.WriteLine(sayi);
 }
 
 // Diziyi sıralama
-
+Console.WriteLine("---------------------------------");
 // Sort metodu ile küçükten büyüğe sıralama yapabiliriz.
-Array.Sort(yeniTamSayilar);
+Array.Sort(tamSayilar);
 // Reverse metodu ile tersine çevirerek büyükten küçüğe sıralama yapabiliriz.
-Array.Reverse(yeniTamSayilar);
+Array.Reverse(tamSayilar);
 // foreach ile sıralanmış diziyi yazdırıyoruz.
-foreach (int sayi in yeniTamSayilar)
+foreach (int sayi in tamSayilar)
 {
     Console.WriteLine(sayi);
 }
