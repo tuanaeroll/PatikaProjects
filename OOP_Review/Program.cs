@@ -1,4 +1,5 @@
 ﻿using OOP_Review;
+using OOP_Review.Concrete;
 using OOP_Review.InheritanceModels;
 
 // İçine öğrenci tipinde bir nesne oluşturabilirsin. Tıpkı string, int gibi Ogrenci de bir class. Yani bir tip.
@@ -56,10 +57,54 @@ oyuncu.OynamaktaOlduguProje = "Kardeşim Benim";
 oyuncu.RoportajVer();
 oyuncu.RolYap();
 
+Console.WriteLine("------------------------------");
+
 Sarkici sarkici = new Sarkici();
 sarkici.Ad = "Tarkan";
-sarkici.Soyad = "Tevek";
+sarkici.Soyad = "Tevetoğlu";
 sarkici.SonAlbum = "Yolla";
 
 sarkici.RoportajVer();
 sarkici.SarkiSoyle();
+
+Console.WriteLine("-------------------------------");
+
+Halk halk = new Halk();
+halk.Ad = "Ali";
+halk.Soyad = "Veli";
+
+halk.RoportajVer();
+
+Console.WriteLine("--------------------------------");
+
+Kedi yeniKedi = new Kedi()
+{
+    Ad = "Pamuk",
+    Tur = "British"
+};
+
+Kopek yeniKopek = new Kopek()
+{
+    Ad = "Hera",
+    Tur = "Frenchie"
+};
+
+yeniKedi.SesCikar();
+yeniKopek.SesCikar();
+
+yeniKedi.YemekYe();
+yeniKopek.YemekYe();
+
+yeniKedi.Uyu();
+yeniKopek.Uyu();
+
+Sahip sahip = new Sahip();
+
+Console.WriteLine("-----İlk Durum ----");
+sahip.HayvanlariListele();
+
+sahip.HayvanEkle(yeniKedi);
+sahip.HayvanEkle(yeniKopek);
+
+Console.WriteLine("--------Son Durum ----");
+sahip.HayvanlariListele();

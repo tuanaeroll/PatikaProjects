@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOP_Review.InheritanceModels
+﻿namespace OOP_Review.InheritanceModels
 {
     internal class BaseKatilimci
     {
