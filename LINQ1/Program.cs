@@ -20,7 +20,7 @@ var specificNumbers = numbers.Where(x => x > 15 && x < 22);
 foreach (var number in specificNumbers) { Console.WriteLine(number); }
 Console.WriteLine("----------------------------");
 
-var squaredNumbers = numbers.Select(x => x * x);
+var squaredNumbers = numbers.Select(x => x * x).ToList();
 foreach (var number in squaredNumbers){ Console.WriteLine(number); }
 
 
