@@ -5,7 +5,7 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// wwwroot klasöründeki  statik dosyaların tarayıcan erişilebilir olmasını sağlayaan metot
+// wwwroot klasöründeki  statik dosyaların tarayıcıdan erişilebilir olmasını sağlayan metot
 app.UseStaticFiles();
 
 // Routing, tarayıcının yaptığı istekleri doğru Contoller-Action metodlarına yönlendirir, bu satır da bu erişimi sağlar
