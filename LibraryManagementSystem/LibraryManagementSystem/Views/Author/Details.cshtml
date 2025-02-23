@@ -1,0 +1,22 @@
+﻿@model LibraryManagementSystem.Models.Author
+
+@{
+	ViewData["Title"] = "Author Details";
+}
+
+<div class="container mt-4">
+	<h2>Author Details</h2>
+
+	<div class="card">
+		<div class="card-header">
+			<h4>@Model.FullName</h4>
+		</div>
+		<div class="card-body">
+			<p><strong>First Name:</strong> @Model.FirstName</p>
+			<p><strong>Last Name:</strong> @Model.LastName</p>
+		</div>
+		<div class="card-footer">
+			<a href="@Url.Action("List", "Author")" class="btn btn-secondary">Back</a>
+		</div>
+	</div>
+</div>
