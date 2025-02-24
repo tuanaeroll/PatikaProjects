@@ -6,7 +6,7 @@ using OOP_Review.InheritanceModels;
 
 // Bir Class ı New'lemek:
 
-Ogrenci ogrenci1 = new Ogrenci(); 
+Ogrenci ogrenci1 = new Ogrenci();
 
 ogrenci1.Isim = "Ajda";
 ogrenci1.Soyisim = "Pekkan";
@@ -18,10 +18,10 @@ ogrenci1.GozlukluMu = false;
 
 // Newleyip değer atamanın farklı bir yolu:
 
-Ogrenci ogrenci2 = new Ogrenci 
+Ogrenci ogrenci2 = new Ogrenci
 {
     Isim = "Hande",
-    Soyisim= "Yener",
+    Soyisim = "Yener",
     Hobi = "Dans",
     Yas = 26,
     GozlukluMu = true,
