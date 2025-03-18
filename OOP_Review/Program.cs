@@ -6,7 +6,11 @@ using OOP_Review.InheritanceModels;
 
 // Bir Class ı New'lemek:
 
+<<<<<<< HEAD
 Ogrenci ogrenci1 = new Ogrenci();
+=======
+Ogrenci ogrenci1 = new Ogrenci(); 
+>>>>>>> 484f76f2c474c95b3428624a26f1b44398b89055
 
 ogrenci1.Isim = "Ajda";
 ogrenci1.Soyisim = "Pekkan";
@@ -18,10 +22,17 @@ ogrenci1.GozlukluMu = false;
 
 // Newleyip değer atamanın farklı bir yolu:
 
+<<<<<<< HEAD
 Ogrenci ogrenci2 = new Ogrenci
 {
     Isim = "Hande",
     Soyisim = "Yener",
+=======
+Ogrenci ogrenci2 = new Ogrenci 
+{
+    Isim = "Hande",
+    Soyisim= "Yener",
+>>>>>>> 484f76f2c474c95b3428624a26f1b44398b89055
     Hobi = "Dans",
     Yas = 26,
     GozlukluMu = true,

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Library Management System
 
 ## Project Overview
@@ -99,3 +100,8 @@ Feel free to clone the project and modify it according to your needs!
 ## License
 
 This project is licensed under the MIT License.
+=======
+# PatikaProjects
+
+// You can view my C# process here.
+>>>>>>> 484f76f2c474c95b3428624a26f1b44398b89055
